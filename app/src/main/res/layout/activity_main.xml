@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="20dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp">
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:textSize="12sp"
+          android:text="Sun"
+          android:fontFamily="Poppins"
+          android:textColor="@color/black"
+          android:gravity="center_horizontal"/>
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:textSize="12sp"
+          android:text="Mon"
+          android:fontFamily="Poppins"
+          android:textColor="@color/black"
+          android:gravity="center_horizontal"/>
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:textSize="12sp"
+          android:text="Tue"
+          android:fontFamily="Poppins"
+          android:textColor="@color/black"
+          android:gravity="center_horizontal"/>
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:textSize="12sp"
+          android:text="Wed"
+          android:fontFamily="Poppins"
+          android:textColor="@color/black"
+          android:gravity="center_horizontal"/>
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:textSize="12sp"
+          android:text="Thu"
+          android:fontFamily="Poppins"
+          android:textColor="@color/black"
+          android:gravity="center_horizontal"/>
+
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:textSize="12sp"
+          android:text="Fri"
+          android:fontFamily="Poppins"
+          android:textColor="@color/black"
+          android:gravity="center_horizontal"/>
+      <TextView
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:textSize="12sp"
+          android:text="Sat"
+          android:fontFamily="Poppins"
+          android:textColor="@color/black"
+          android:gravity="center_horizontal"/>
+
+   </LinearLayout>
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:layout_marginTop="3dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:background="#EEEEEE"/>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_marginTop="15dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp">
+
+      <ImageView
+          android:id="@+id/left_arrow_IV"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_marginTop="10dp"
+          android:src="@drawable/left_arrow"/>
+
+      <TextView
+          android:id="@+id/month_name_tv"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/black"
+          android:layout_margin="10dp"
+          android:fontFamily="Poppins"
+          android:textSize="14dp"
+          android:text="January 2021"/>
+
+      <ImageView
+          android:id="@+id/right_arrow_IV"
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:layout_marginTop="10dp"
+          android:src="@drawable/right_arrow"/>
+   </LinearLayout>
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/calendarRecyclerView"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginRight="10dp"
+       android:layout_marginLeft="10dp"/>
+</LinearLayout>
